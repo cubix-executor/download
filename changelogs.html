@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from bloxstrap.org/changelogs by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Sep 2024 18:58:32 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="assets/bloxstrap-fav.ico" type="image/x-icon">
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="en_US" property="og:locale">
+<meta content="website" property="og:type">
+<meta content="Bloxstrap" property="og:site_name">
+<meta content="#33BEF2" name="theme-color">
+<meta content="#33BEF2" name="msapplication-TileColor">
+<link href="changelogs.html" rel="canonical">
+<link rel="icon" href="assets/google-icon.ico">
+<meta content="https://bloxstrap.org/changelogs" property="og:url">
+<meta content="Bloxstrap Changelogs" property="og:title">
+<meta content="Explore the latest updates and improvements in Bloxstrap" property="og:description">
+<meta content="Explore the latest updates and improvements in Bloxstrap" name="description">
+<link rel="stylesheet" href="style8510.css?v=0.2">
+<title>
+    Bloxstrap Changelogs 
+</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="assets/bloxstrap-logo.png" alt="bloxstrap software Logo"></a>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="dl.html">Download</a>
+        <a href="help.html">Need Help?</a>
+        </nav>
+        </header>
+</div>
+</div>
+</div>
+</div>
+<div class="cnt">
+<h1 id="changelogs" class="fh-1" style="text-align: center;">Changelogs</h1>
+
+<p>Hello and welcome to the Bloxstrap changelogs page! Here, you can explore all the updates and enhancements we’ve made to improve your experience with our app. We’re committed to continuously updating and refining Bloxstrap to ensure it delivers the best functionality and user experience.</p>
+<p>Below, you’ll find detailed information on the new features and bug fixes included in each version. You can also download the latest version of Bloxstrap, as well as previous versions, from our <a href="dl.html">Download page</a>. For more information about Bloxstrap and its capabilities, visit the <a href="index.html">Bloxstrap Home Page</a>.</p>
+<p>Thank you for choosing Bloxstrap and for supporting its development. 😊</p>
+
+<h2 class="fh-3" style="color: red;">v2.7.0</h2>
+    <h3>Additions</h3>
+    <ul>
+        <li>Localization has been fully implemented! By default, it follows your system language, but you can manually choose one in the Bloxstrap Menu's appearance tab too. Massive thank you to all the translators who contributed!</li>
+        <li>In the flag editor, the JSON import utility now allows you to easily import from a file.</li>
+        <li>Added the ability to easily disable the configuration of any Fast Flags (intended for troubleshooting purposes).</li>
+        <li>Added the ability to use unsupported Roblox app languages.</li>
+        <li>Added the ability to easily open Roblox's current log file through the activity tracker menu.</li>
+    </ul>
+
+    <h3>Existing Changes</h3>
+    <ul>
+        <li>On version upgrade, the new release notes now open in a webpage instead of just a notification popping up.</li>
+        <li>The prompt to confirm second instance launching is now optional, being disabled by default.</li>
+        <li>Bootstrapper styles have now been given more sensible names.</li>
+        <li>The presets section of the Fast Flags tab has been given a complete refresh, with loads more options, and fixes for problematic presets.</li>
+        <li>A proper error message is now shown for downloads that failed verification.</li>
+        <li>Functionality for custom integrations has been vastly improved, with the added ability to specify files instead of only executables, applications now launching with the same working folder as the executable's location, and a file picker dialog.</li>
+        <li>Exception dialog message now makes reference to the Wiki, telling you to read it first before opening an issue.</li>
+        <li>Improved readability of the menu alert bar (#2219).</li>
+        <li>Scroll bars in the Bloxstrap Menu are now always shown.</li>
+    </ul>
+
+    <h3>Bug Fixes</h3>
+    <ul>
+        <li>Fixed inconsistent handling of desktop app closing for "Don't exit to desktop app" integration.</li>
+        <li>Fixed performance bug with the activity tracker (which was also contributing to the above issue).</li>
+        <li>Fixed bug with installation erroring if the given path had a lowercase drive letter (thank you @cryolithic!).</li>
+        <li>Fixed BloxstrapRPC not working under certain foreign system locales.</li>
+        <li>Fixed bug with JSON exporter in the flag editor erroring when copying to the clipboard.</li>
+        <li>Fully implemented flag editor validation, now validating flag types and values too.</li>
+        <li>Added handler for if a log file cannot be written (#2135).</li>
+    </ul>
+<h2 class="fh-3" style="color: red;">v2.6.1</h2>
+<ul>
+    <li>Fixed the Git hash being included in the version number. That's a recent .NET change that I forgot to account for.</li>
+</ul>
+<h2 class="fh-3" style="color: red;">v2.6.5</h2>
+<h3>Additions</h3>
+<ul>
+    <li>New launcher styles! Now being closer to the contemporary Roblox launcher, especially the new Mac launcher.</li>
+    <li>If you launch Roblox while you're already in a Roblox game, you'll be prompted for confirmation so that you don't close your existing game by accident (#606).</li>
+</ul>
+
+<h3>Existing Changes</h3>
+<ul>
+    <li>The flag for Bloxstrap FPS unlocking is now not set unless necessary.</li>
+    <li>Menu footer now follows Windows 11 Mica colouring.</li>
+    <li>The "Disable desktop app" mod option is now the "Don't exit to desktop app" integration. This also fixes the issue of Roblox crashing when exiting a game. Activity tracking is required for this to work.</li>
+    <li>Big scary warnings have been added to the Fast Flag editor. Spooky. If you're confused as to where it is, it's at the bottom.</li>
+    <li>Saving your changes in the menu is now non-destructive, and does not close it anymore.</li>
+    <li>Activity tracker information fetching is now more efficient.</li>
+    <li>Trying to install with administrator privileges is now blocked.</li>
+    <li>Embedded links in text are now highlighted in colour.</li>
+    <li>TrueType Collection (.ttc) fonts are now supported as choosable fonts.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+<ul>
+    <li>Dragging the table header of the Fast Flag editor does not cause a crash anymore.</li>
+    <li>Connectivity checking is now much more efficient in the event of network failures.</li>
+    <li>Having a custom font configured on first installation no longer causes the install process to error.</li>
+    <li>Fixed permission errors when trying to remove a custom font.</li>
+    <li>Added support for recent changes in Roblox's deployment system which was causing those "403 (Forbidden)" errors that forced me to release this in the first place.</li>
+</ul>
+
+<h3>Removals</h3>
+<ul>
+    <li>Multi-instance launching has now been removed.</li>
+</ul>
+
+<h2 class="fh-3" style="color: red;">v2.5.4</h2>
+<ul>
+    <li>Fixed option for font modding not showing on older versions of Windows.</li>
+    <li>Fixed text overflow in the flag import dialog.</li>
+    <li>The channel selector has been removed, and using a restricted channel will auto-switch you to the default one.</li>
+    <li>Removed option to configure rendering mode due to how much instability it causes. It will be added back in the future when better precautions are in place.</li>
+</ul>
+<h2 class="fh-3" style="color: red;">v2.5.3</h2>
+<ul>
+    <li>Fixed selected escape menu version not applying when choosing either V1 or V2.</li>
+    <li>Fixed deployment mirror selection not properly checking for errors (y'know, that "503 (Service Unavailable)" error that was probably happening to you earlier today).</li>
+</ul>
+<h2 class="fh-3" style="color: red;">v2.5.2</h2>
+<ul>
+    <li>Fixed a bug with an "access is denied" error sometimes being thrown when launching Roblox.</li>
+    <li>More friendly error messages are shown for common issues (failed auto-updating, shortcut creation, etc).</li>
+    <li>Fixed a bug with closing the dialog while launching not actually stopping the bootstrapper.</li>
+    <li>Fixed default application opener not working properly.</li>
+    <li>Added mitigations for the "decryption operation failed" error, which has been plaguing users for a while.</li>
+    <li>Fixed selected theme not applying to the notification area icon menu.</li>
+</ul>
+<h2 class="fh-3" style="color: red;">v2.5.1</h2>
+<h3>Improvements</h3>
+<ul>
+    <li>Activity tracking has been fixed (of course).</li>
+    <li>Fixed a bunch of typos.</li>
+    <li>Connectivity checking has been improved.</li>
+    <li>Fixed selected channel sometimes not applying.</li>
+    <li>Flag names can now be edited in the FastFlag editor.</li>
+    <li>Added further restrictions when choosing an install location (can't be the root of a drive, can't be in a user profile folder, etc).</li>
+    <li>Improved problems relating to file access conflicts.</li>
+    <li>Fixed problems with exception dialog sometimes showing multiple times.</li>
+    <li>Exception dialog now lists all the inner exceptions for the relevant error.</li>
+    <li>Clipboard copying has been fixed.</li>
+    <li>Improved problems relating to bootstrapper cancelling.</li>
+    <li>Channel now defaults to LIVE if it doesn't exist.</li>
+    <li>Fixed selected escape menu version not showing.</li>
+    <li>Altering mods no longer takes effect while Roblox is running, which was causing errors.</li>
+    <li>FastFlag importing from JSON can now be done by copy-paste instead of file selection.</li>
+    <li>Fixed a bug with BloxstrapRPC rich presence configuration not applying when joining a game.</li>
+</ul>
+<h3>Removals</h3>
+<ul>
+    <li>Ability to change install location after installation has been removed.</li>
+    <li>Built-in dropdown for channel selection has been removed.</li>
+    <li>Antialiasing quality preset has been removed due to it causing rendering issues on Nvidia cards (#511).</li>
+</ul>
+<h2 class="fh-3" style="color: red;">v2.5.0</h2>
+<h3>Additions</h3>
+<ul>
+    <li>The FastFlag editor now has a search bar, and the ability to import from JSON. (#446)</li>
+    <li>Added options for configuring antialiasing quality. (#448)</li>
+    <li>Added the option to force reinstall Roblox on next launch, located in the menu's behaviour tab.</li>
+    <li>Outdated channel check on startup has been re-added.</li>
+    <li>Bloxstrap now detects if its installation is missing, on another drive, or is not correctly registered. (#474)</li>
+</ul>
+
+<h3>Improvements</h3>
+<ul>
+    <li>An internet connectivity check is now performed when Bloxstrap starts.</li>
+    <li>The old avatar editor background has been adjusted to suit R15 characters. (#450)</li>
+    <li>The option for DPI scaling fixing is now optional instead of forced.</li>
+    <li>Fixed the emoji mod preset not working due to ISPs blocking raw.githubusercontent.com.</li>
+    <li>Improved Roblox version checking, now with a second fallback check from a different source.</li>
+    <li>Default framerate limit is now set depending on your main monitor's refresh rate.</li>
+    <li>Installing/updating Roblox should be more reliable, with automated retries, and improved error handling.</li>
+    <li>BloxstrapRPC, formerly known as Bloxstrap Game Messaging, has undergone a complete revamp. (thanks @EpixScripts!)</li>
+    <li>Notification area context menu now has icons.</li>
+    <li>Fluent dialog style now has Mica again. The children yearn for the Mica.</li>
+    <li>Logs are now written in UTF-8 instead of Unicode.</li>
+    <li>Exceptions are now logged in English.</li>
+    <li>Read-only files should now be less of a problem.</li>
+    <li>When uninstalling, the Roblox folder in AppData is now cleaned up, if there is no existing Roblox installation.</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul>
+    <li>Fixed the custom font mod not applying properly when installing for the first time.</li>
+    <li>Fixed the install location warning showing twice when installing for the first time.</li>
+    <li>Fixed check for N editions of Windows being hardcoded to the C: drive.</li>
+    <li>Fixed Bloxstrap crashing if ipinfo.io could not be contacted when fetching a game server's location. (#445)</li>
+    <li>Fixed Vulkan/OpenGL fullscreening not working properly.</li>
+    <li>Fixed duplicate launches erroring (again).</li>
+</ul>
+<footer>
+    <div>
+    <span>&#169; <a href="index.html">Bloxstrap</a></span>
+      <br>
+      <a href="contact-us.html">Contact Us</a>
+      <span>|</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <span>|</span>
+      <a href="terms.html">Terms and Conditions</a>
+      <span>|</span>
+      <a href="changelogs.html">Changelogs</a>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/bloxstrap">Facebook</a>
+      <span>|</span>
+      <a href="https://discord.gg/QXMxtd3gjJ">Discord</a>
+      <span>|</span>
+      <a href="https://twitter.com/bloxstrap">Twitter</a>
+      <span>|</span>
+      <a href="https://t.me/s/bloxstrap">Telegram</a>
+      <span>|</span>
+      <a href="https://www.pinterest.com/bloxstrap/">Pinterest</a>
+    </div>
+  </footer>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8cae346f398790a7',t:'MTcyNzYzNjMwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='cdn-cgi/challenge-platform/h/g/scripts/jsd/ec4b873d446c/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    
+<!-- Mirrored from bloxstrap.org/changelogs by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Sep 2024 18:58:32 GMT -->
+</html>
